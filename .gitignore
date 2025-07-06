@@ -1,0 +1,7 @@
+.vscode
+__pycache__
+*.mp3
+*.wav
+transcription.txt
+alignment.json
+venv
