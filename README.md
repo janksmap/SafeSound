@@ -1,4 +1,4 @@
-# SafeSound
+# SafeSound: Audio Profanity Filter
 
 SafeSound is a tool that processes audio files and exports a version with the profanity muted.
 
