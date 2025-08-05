@@ -12,11 +12,11 @@ SafeSound uses [OpenAI's Whisper model](https://github.com/openai/whisper) to tr
 - Docker (for running Gentle, the forced aligner)
 - ffmpeg (for audio processing)
 
-> ⚠️ **Note:** SafeSound has only been tested on macOS. Windows and Linux may work but are not guaranteed. 
+> ⚠️ **Note:** SafeSound has only been tested on macOS. Windows and Linux may work but are not guaranteed.
 
 ## Installation
 
-1. Install Python 3.10 (recommended: [pyenv](https://github.com/pyenv/pyenv)):
+1. Install Python 3.10 (I recommend using [pyenv](https://github.com/pyenv/pyenv)):
     ```sh
     pyenv install 3.10
     pyenv local 3.10
@@ -29,10 +29,13 @@ SafeSound uses [OpenAI's Whisper model](https://github.com/openai/whisper) to tr
     ```
 3. Ensure `ffmpeg` is installed and available in your PATH.
 4. Run `./setup.sh` to setup the environment variables (.env)
+5. Install [Docker](https://www.docker.com/).
 
 ## Usage
 
-The main entry point is [`safe_sound.py`](safe_sound.py):
+> ⚠️ **IMPORTANT:** Before running the program, make sure Docker is running. If you're using Docker desktop, this is as easy as opening the app. You can close out of it as long as it's still running in the background.
+
+To run SafeSound, use the following command _(You must be in the SafeSound directory)_:
 
 ```sh
 python3 safe_sound.py <file_to_edit>
@@ -51,13 +54,13 @@ python3 safe_sound.py <directory_name>/*
 ```
 
 ---
-> ⚠️ **Note:** By default, SafeSound will use Whisper's `base` model. You can change this in the `.env` file. Here are the available models:
+> ⚠️ **Note:** By default, SafeSound will use Whisper's `base` model. You can change this in the `.env` file. I recommend using `Turbo` because it's the best balance of speed and accuracy. Of course, the model you run will depend on your available hardware. Here are the available models:
 
 ![Whisper models](docs/whisper_models.png)
 
 You can modify the `profanity.txt` file to customize the word list to your preference. It allows for individual words or entire phrases.
 
-> ⚠️ **Warning:** `profanity.txt` is NSFW as all the words are explicitly laid out.
+> ⚠️ **Warning:** `profanity.txt` is NSFW as all the words are in plain text.
 
 ## Development
 

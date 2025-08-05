@@ -7,12 +7,7 @@ Whether you're fixing bugs, improving docs, or adding new features — your help
 
 ## 🛠 Prerequisites
 
-Make sure you have:
-
-- Python 3.10 or higher
-- `ffmpeg` installed (for audio processing)
-- Docker installed (for Gentle)
-- `pip install -r requirements.txt`
+- Follow the installation instructions in [README.md](README.md)
 
 ---
 
@@ -21,7 +16,7 @@ Make sure you have:
 1. **Fork** the repo  
 2. **Clone** your fork:
    ```bash
-   git clone https://github.com/yourusername/safesound.git
+   git clone https://github.com/<yourusername>/safesound.git
    cd safesound
    ```
 3. **Create a branch** for your changes:
@@ -33,8 +28,8 @@ Make sure you have:
 
 ## 📐 Code Style
 
-- Use meaningful variable names and comments
-- Write docstrings for all public functions and classes
+- Use meaningful variable names and comments.
+- Write docstrings for all public functions and classes. (I know I don't have this yet, but I'm working toward it. Feel free to help if you can!)
 
 ---
 
