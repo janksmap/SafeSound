@@ -28,6 +28,7 @@ SafeSound uses [OpenAI's Whisper model](https://github.com/openai/whisper) to tr
     pip install -r requirements.txt
     ```
 3. Ensure `ffmpeg` is installed and available in your PATH.
+4. Run `./setup.sh` to setup the environment variables (.env)
 
 ## Usage
 
