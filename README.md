@@ -35,6 +35,13 @@ SafeSound uses [OpenAI's Whisper model](https://github.com/openai/whisper) to tr
 
 > ⚠️ **IMPORTANT:** Before running the program, make sure Docker is running. If you're using Docker desktop, this is as easy as opening the app. You can close out of it as long as it's still running in the background.
 
+Navigate to the SafeSound directory and activate venv:
+
+```
+cd /Users/<your_user>/Downloads/SafeSound/venv/bin
+source ./activate
+```
+
 To run SafeSound, use the following command _(You must be in the SafeSound directory)_:
 
 ```sh
