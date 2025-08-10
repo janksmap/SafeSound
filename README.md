@@ -16,6 +16,8 @@ SafeSound uses [OpenAI's Whisper model](https://github.com/openai/whisper) to tr
 
 ## Installation
 
+> ⭐️ For easy installation, download the macOS installer on the [releases page](https://github.com/janksmap/SafeSound/releases) and then skip to the [usage instructions](#usage).
+
 1. Install Python 3.10 (I recommend using [pyenv](https://github.com/pyenv/pyenv)):
     ```sh
     pyenv install 3.10
@@ -28,8 +30,8 @@ SafeSound uses [OpenAI's Whisper model](https://github.com/openai/whisper) to tr
     pip install -r requirements.txt
     ```
 3. Ensure `ffmpeg` is installed and available in your PATH.
-4. Run `./setup.sh` to setup the environment variables (.env)
-5. Install [Docker](https://www.docker.com/).
+4. Copy the contents of `.env.template` to `.env` to setup the environment variables (.env)
+5. Install and open [Docker](https://www.docker.com/).
 
 ## Usage
 
@@ -38,14 +40,14 @@ SafeSound uses [OpenAI's Whisper model](https://github.com/openai/whisper) to tr
 Navigate to the SafeSound directory and activate venv:
 
 ```
-cd /Users/<your_user>/Downloads/SafeSound/venv/bin
-source ./activate
+cd /Users/<your_user>/Downloads/SafeSound
+source venv/bin/activate
 ```
 
 To run SafeSound, use the following command _(You must be in the SafeSound directory)_:
 
 ```sh
-python3 safe_sound.py <file_to_edit>
+python3 safe_sound.py <path_of_file_to_edit>
 ```
 
 You can also process multiple files by typing:
@@ -77,6 +79,8 @@ You can modify the `profanity.txt` file to customize the word list to your prefe
     - [`mute_profanity.py`](mute_profanity.py): Mutes profanities in audio.
     - [`gentle.py`](gentle.py): Integrates with Gentle for forced alignment.
     - [`transcriber.py`](transcriber.py): Handles transcription tasks.
+- Executables:
+    - Currently, there is an installer that will download the necessary components and clone the repo. You can find its script files in the [executables folder](./executables).
 
 ## Contributing
 
@@ -84,4 +88,7 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md) for guidelines.
 
 ## License
 
-[MIT](LICENSE)
+[MIT LICENSE](LICENSE)
+
+## Image Credits
+The GitHub preview and installer icons were created by combining Flaticon.com images into new designs using AI.

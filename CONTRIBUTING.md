@@ -16,7 +16,7 @@ Whether you're fixing bugs, improving docs, or adding new features — your help
 1. **Fork** the repo  
 2. **Clone** your fork:
    ```bash
-   git clone https://github.com/<yourusername>/safesound.git
+   git clone https://github.com/janksmap/safesound.git
    cd safesound
    ```
 3. **Create a branch** for your changes:
