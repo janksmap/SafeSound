@@ -1,0 +1,16 @@
+#!/usr/bin/osascript
+set myPosixPath to POSIX path of (path to me as text)
+set contentsDir to do shell script "dirname \"$(dirname " & quoted form of myPosixPath & ")\""
+set setupPath to contentsDir & "/Resources/setup.sh"
+
+tell application "Terminal"
+    activate
+    if (count of windows) = 0 then
+        do script "bash " & quoted form of setupPath & "; exec bash"
+    else
+        tell window 1
+            set currentTab to selected tab
+            do script "bash " & quoted form of setupPath & "; exec bash" in currentTab
+        end tell
+    end if
+end tell
