@@ -6,3 +6,4 @@ transcription.txt
 alignment.json
 venv
 .env
+.DS_Store
