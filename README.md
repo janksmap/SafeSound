@@ -71,6 +71,16 @@ You can modify the `profanity.txt` file to customize the word list to your prefe
 
 > ⚠️ **Warning:** `profanity.txt` is NSFW as all the words are in plain text.
 
+## Uninstall
+- You can easily uninstall any or all of the dependencies originally downloaded by the installer by running:
+```
+./uninstall.sh
+```
+If it says "Permission Denied", you may need to first run:
+```
+sudo chmod +x uninstall.sh
+```
+
 ## Development
 
 - Entry point: [`safe_sound.py`](safe_sound.py)
